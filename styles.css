@@ -261,20 +261,20 @@
   }
 
 .main__content h1{
-    font-size: 4rem;
+    font-size: 2.8rem;
     line-height: 4rem;
     font-family: 'TitleFont';
 }
 
 .main__content h2{
-    font-size: 3rem;
+    font-size: 1.6rem;
     font-family: 'SubHeaderFont';
     font-weight: 900;
 }
 
 .main__content p{
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 0.8rem;
     font-family: 'BodyFont';
     font-weight: 500;
 }
@@ -286,7 +286,7 @@
 }
 
 .main__btn{
-    font-size: 1.8rem;
+    font-size: 1.0rem;
     border-radius: 15px;
     background: #1ADF0E;
     color: #000000;
