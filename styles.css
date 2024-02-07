@@ -26,26 +26,49 @@
 }
 
 #goTopBtn {
-    display: none; /* Initially hide the button */
-    position: fixed; /* Fixed position */
-    bottom: 20px; /* Position from the bottom */
-    right: 30px; /* Position from the right */
-    z-index: 99; /* Make sure it's above other elements */
-    font-size: 20px; /* Adjust font size */
-    font-family: 'TitleFont';
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
-    background-color: #1ADF0E; /* Button background color */
-    color: black; /* Text color */
-    cursor: pointer; /* Change cursor on hover */
-    padding: 15px; /* Add padding */
-    border-radius: 10px; /* Add border radius for rounded corners */
+  display: none; /* Initially hide the button */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Position from the bottom */
+  right: 30px; /* Position from the right */
+  z-index: 99; /* Make sure it's above other elements */
+  width: 50px; /* Set width of the button */
+  height: 50px; /* Set height of the button */
+  background-color: #1ADF0E; /* Button background color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor on hover */
+  padding: 0; /* Remove padding */
+  font-size: 24px; /* Adjust font size */
+  color: #fff; /* Text color */
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+#goTopBtn img {
+  width: 27px; /* Adjust width of the arrow image */
+  height: auto; /* Maintain aspect ratio */
+  filter: invert(1); /* Invert the color of the arrow image */
+  align-self: center;
+}
+
+#goTopBtn:hover {
+  background-color: #000; /* Change background color on hover */
+}
+
+@media screen and (max-width: 960px) {
+  #goTopBtn {
+      width: 40px; /* Adjust width for mobile view */
+      height: 40px; /* Adjust height for mobile view */
   }
-  
-  #goTopBtn:hover {
-    background-color: #000; /* Change background color on hover */
-    color: #fff;
-  }  
+  #goTopBtn img {
+    width: 24px; /* Adjust width of the arrow image */
+    height: auto; /* Maintain aspect ratio */
+    filter: invert(1); /* Invert the color of the arrow image */
+    align-self: center;
+  }
+}
 
 .navbar{
     background: #000000;
@@ -71,13 +94,6 @@
 }
 
 #navbar__logo{
-    background-color: #1ADF0E;
-    background-image: linear-gradient(to top #1b6f2b 0%, #2dd554 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -178,7 +194,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 60vh;
+      height: 40vh;
       font-size: 1.6rem;
     }
   
@@ -341,13 +357,13 @@
   
     .main__content {
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
     }
   
     .main__content h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       margin-top: 5rem;
-      line-height: 4rem;
+      line-height: 2.4rem;
     }
   
     .main__content h2 {
@@ -359,6 +375,13 @@
       font-size: 1.5rem;
       font-weight: 500;
     }
+
+    .main__img {
+      width: 200px; /* Adjust the width */
+      height: auto; /* Maintain aspect ratio */
+      align-self: center;
+  }
+  
 }
   
 @media screen and (max-width: 480px) {
@@ -368,21 +391,36 @@
     }
 
     .main__content h1 {
-      font-size: 2rem;
-      margin-top: 3rem;
+      font-size: 2.2rem;
+      margin-top: 4rem;
     }
     .main__content h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     .main__content p {
-      margin-top: 2rem;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      text-align: center;
+      justify-content: center;
     }
   
     .main__btn {
-      padding: 12px 36px;
-      margin: 5rem 0;
+      padding: 10px 34px;
+      margin: 3rem 0;
     }
+    
+    .main__img {
+      width: 200px; /* Adjust the width */
+      height: auto; /* Maintain aspect ratio */
+      align-self: center;
+    }
+
+    .main__img--container {
+      display: flex;
+      justify-content: center;
+    }
+
 }
 
 .about{
@@ -447,16 +485,18 @@
   .about__img--container {
       display: flex;
       justify-content: center;
+      margin-top: 3rem;
   }
 
   .about__content {
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 16rem;
+      margin-top: 3rem;
   }
 
   .about__content h1 {
       font-size: 4rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
       line-height: 4rem;
   }
 
@@ -466,7 +506,7 @@
 
   .about__content p {
       margin-top: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 500;
   }
 }
@@ -478,16 +518,18 @@
   }
 
   .about__content h1 {
-      font-size: 1.3rem;
-      margin-top: 1rem;
+      font-size: 2.2rem;
+      line-height: 3rem;
+      margin-top: 0rem
   }
 
   .about__content h2 {
-      font-size: 0.8rem;
+      font-size: 1.4rem;
+      margin-top: 2rem;
   }
 
   .about__content p {
-      margin-top: 0.5rem;
+      margin-top: 2rem;
   }
 }
 
@@ -563,6 +605,37 @@
     font-size: 1.3rem; /* Adjust the font size of the titles */
 }
 
+@media screen and (max-width: 480px) {
+  .manuals__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 30px; /* Adjust padding for smaller screens */
+}
+
+  .manuals__header h1{
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: 'TitleFont';
+    text-align: center;
+  }
+
+  .manuals__header h2{
+    font-size: 1.2rem;
+    margin-top: 2.0rem;
+    font-family: 'SubHeaderFont';
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
 footer {
     background-color: #000;
     margin-top: 800px;
@@ -573,7 +646,7 @@ footer {
 
 @media screen and (max-width: 1100px) {
   footer {
-    margin-top: 2500px;
+    margin-top: 200px;
     padding: 20px 0;
     text-align: center;
   }
@@ -581,7 +654,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   footer {
-    margin-top: 2500px;
+    margin-top: 2100px;
     padding: 20px 0;
     text-align: center;
   }
