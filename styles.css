@@ -387,8 +387,7 @@
 
 .about{
     background-color: #fff;
-    margin-bottom: 300px;
-  }
+}
 
 .about__container{
     display: grid;
@@ -494,8 +493,7 @@
 
 .manuals{
     background-color: #fff;
-    margin-bottom: 200px;
-  }
+}
 
 .manuals__header{
     color: #000;
