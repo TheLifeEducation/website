@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'BodyFontBlack';
+  src: url('./Fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'SubHeaderFont';
     src: url('./Fonts/Agrandir-Regular.otf') format('opentype');
 }
@@ -78,10 +83,11 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 #navbar__logo img{
-    width: 100px;
+    width: 90px;
     height: auto;
 }
 
@@ -261,20 +267,20 @@
   }
 
 .main__content h1{
-    font-size: 2.8rem;
+    font-size: 3rem;
     line-height: 4rem;
     font-family: 'TitleFont';
 }
 
 .main__content h2{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: 'SubHeaderFont';
     font-weight: 900;
 }
 
 .main__content p{
     margin-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: 'BodyFont';
     font-weight: 500;
 }
@@ -286,12 +292,12 @@
 }
 
 .main__btn{
-    font-size: 1.0rem;
+    font-size: 1.4rem;
     border-radius: 15px;
     background: #1ADF0E;
     color: #000000;
     border: none;
-    padding: 20px 60px;
+    padding: 20px 40px;
     margin-top: 2rem;
     outline: none;
 }
@@ -305,6 +311,7 @@
 .main__btn a {
     position: relative;
     font-weight: bold;
+    font-family: 'BodyFontBlack';
     letter-spacing: 2px;
     z-index: 2;
     color: inherit;
@@ -403,26 +410,26 @@
   }
 
 .about__content h1{
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     line-height: 4rem;
     font-family: 'TitleFont';
 }
 
 .about__content h2{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-family: 'SubHeaderFont';
     font-weight: 900;
 }
 
 .about__content p{
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     font-family: 'BodyFont';
     font-weight: 500;
 }
 
 .about__img {
-    width: 500px; /* Adjust the width */
+    width: 400px; /* Adjust the width */
     height: auto; /* Maintain aspect ratio */
     align-self: center;
 }
@@ -496,15 +503,15 @@
 }
 
 .manuals__header h1{
-    font-size: 4rem;
+    font-size: 3.3rem;
     line-height: 4rem;
     font-family: 'TitleFont';
     text-align: center;
 }
 
 .manuals__header h2{
-    font-size: 2rem;
-    margin-top: 2.6rem;
+    font-size: 1.5rem;
+    margin-top: 2.0rem;
     font-family: 'SubHeaderFont';
     font-weight: 900;
     text-align: center;
@@ -532,7 +539,7 @@
 
 .manual__item {
     text-align: center;
-    margin: 30px;
+    margin: 35px;
 }
 
 .manual__item a {
@@ -540,8 +547,8 @@
 }
 
 .manual__item img {
-    margin-top: 2rem;
-    width: 300px; /* Adjust the width of the images */
+    margin-top: 1rem;
+    width: 250px; /* Adjust the width of the images */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
