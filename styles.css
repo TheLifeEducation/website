@@ -15,7 +15,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: 'SubHeaderFont', sans-serif;
 }
@@ -312,7 +312,7 @@
   }
   
 .main__img--container {
-text-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1100px) {
@@ -324,6 +324,7 @@ text-align: center;
       width: 100%;
       margin: 0 auto;
       height: 90%;
+      margin-bottom: 200px;
     }
   
     .main__img--container {
@@ -351,9 +352,9 @@ text-align: center;
       font-size: 1.5rem;
       font-weight: 500;
     }
-  }
+}
   
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .main__img{
       width: 250px;
       height: 250px;
@@ -375,14 +376,14 @@ text-align: center;
       padding: 12px 36px;
       margin: 5rem 0;
     }
-  }
+}
 
-  .about{
+.about{
     background-color: #fff;
     margin-bottom: 300px;
   }
 
-  .about__container{
+.about__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -424,6 +425,64 @@ text-align: center;
     width: 500px; /* Adjust the width */
     height: auto; /* Maintain aspect ratio */
     align-self: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .about__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 90%;
+  }
+
+  .about__img--container {
+      display: flex;
+      justify-content: center;
+  }
+
+  .about__content {
+      text-align: center;
+      margin-bottom: 4rem;
+  }
+
+  .about__content h1 {
+      font-size: 4rem;
+      margin-top: 5rem;
+      line-height: 4rem;
+  }
+
+  .about__content h2 {
+      font-size: 2.5rem;
+  }
+
+  .about__content p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about__img {
+      width: 250px;
+      height: 250px;
+  }
+
+  .about__content h1 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+  }
+
+  .about__content h2 {
+      font-size: 0.8rem;
+  }
+
+  .about__content p {
+      margin-top: 0.5rem;
+  }
 }
 
 .manuals{
@@ -501,8 +560,24 @@ text-align: center;
 
 footer {
     background-color: #000;
-    margin-top: 400px;
+    margin-top: 800px;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    margin-top: 2500px;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    margin-top: 2500px;
+    padding: 20px 0;
+    text-align: center;
+  }
 }
