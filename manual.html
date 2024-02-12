@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual - Portal TLP-Education</title>
+    <link rel="stylesheet" href="manual.css">
+</head>
+<body>
+    <button id="goTopBtn" onclick="goToTop()">
+        <img src="./Images/up_top_arrow_vector_navigation.svg" alt="Scroll to Top">
+    </button>    
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+                <img src="./Images/logo tlpE-Branca.png" alt="Logo">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">Sobre</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="manual.html" class="button">Acesse o Manual</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="manuals" id="Manual">
+        <div class="manuals__container">
+            <div class="manuals__header">
+                <h1>Manual de Montagens</h1>
+                <h2>Clique na montagem com o nome informado em sua prática <br> para acessar seu manual de montagem</h2>
+            </div>
+            <br>
+            <div class="manuals__buttons">
+                <div class="manual__item">
+                    <a href="./Docs/Montagem STEAM.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/1.png" alt="Montagem STEAM"></a>
+                    <p>Montagem STEAM</p>
+                </div>
+                <div class="manual__item">
+                    <a href="./Docs/Meu Primeiro Robô.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/2.png" alt="Meu Primeiro Robô"></a>
+                    <p>Meu Primeiro Robô</p>
+                </div>
+                <div class="manual__item">
+                    <a href="./Docs/Robô The Life.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/3.png" alt="Robô The Life"></a>
+                    <p>Robô The Life</p>
+                </div>
+                <div class="manual__item">
+                    <a href="./Docs/Veículo Movido a Sensores.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/4.png" alt="Veículo Movido à Sensores"></a>
+                    <p>Veículo Movido à Sensores</p>
+                </div>
+                <div class="manual__item">
+                    <a href="./Docs/Robô com Sensor de Toque.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/5.png" alt="Robô com Sensor de Toque"></a>
+                    <p>Robô com Sensor de Toque</p>
+                </div>
+                <div class="manual__item">
+                    <a href="./Docs/Robô com Sensor Ultrassônico.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/6.png" alt="Robô com Sensor Ultrassônico"></a>
+                    <p>Robô com Sensor Ultrassônico</p>
+                </div>
+                <div class="manual__item">
+                    <a href="./Docs/Robô Indicador de Cor.pdf" target="_blank" rel="noopener noreferrer"><img src="./Images/7.png" alt="Robô Indicador de Cor"></a>
+                    <p>Robô Indicador de Cor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; The Life Education</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
