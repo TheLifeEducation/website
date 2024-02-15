@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'TitleFont';
+    src: url('./Fonts/horizon.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BodyFont';
+    src: url('./Fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+/* Make the page use the entire screen */
+html {
+    height: 100%;
+    background-image: url('./Images/bg.png');
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'BodyFont', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* White rectangle in the middle of the screen */
+#main-holder {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.396);
+}
+
+/* Logo container */
+#logo-container {
+    position: absolute; /* Position absolute for positioning */
+    top: 20px; /* Adjust top position */
+    right: 30px; /* Adjust right position */
+}
+
+/* Logo styles */
+#logo-container img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Login title style */
+#login-header {
+    font-family: 'TitleFont';
+    margin-bottom: 10px; /* Increase space below the title */
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+/* Error message style */
+#login-error-msg {
+    width: 100%; /* Adjust width */
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: none;
+    background-color: #e58f8f;
+    opacity: 0;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Increase space below the error message */
+}
+
+/* Adjust the positioning of the login form inside the last row of the main grid */
+#login-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+
+/* Style the login form fields' placeholders */
+.login-form-field::placeholder {
+    color: #3a3a3a;
+    width: 80%;
+}
+
+/* Style the login form fields (username and password) */
+.login-form-field {
+    width: 120%; /* Adjust width */
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 20px; /* Increase space below the fields */
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+    font-family: 'BodyFont';
+}
+
+/* Style the login button */
+#login-form-submit {
+    width: 100%; /* Adjust width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    background-color: #1ADF0E;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'TitleFont';
+}
+
+/* Change button color on hover */
+#login-form-submit:hover {
+    background-color: black;
+    color: white;
+}
