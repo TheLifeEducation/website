@@ -121,3 +121,19 @@ body {
     background-color: black;
     color: white;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    #main-holder {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+    .login-form-field::placeholder {
+        width: 100%; /* Adjust placeholder width for smaller screens */
+    }
+    .login-form-field {
+        width: 100%; /* Adjust input field width for smaller screens */
+    }
+    #login-form-submit {
+        width: 100%; /* Adjust button width for smaller screens */
+    }
+}
