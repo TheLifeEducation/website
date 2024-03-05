@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Professor</title>
+  <link rel="stylesheet" href="adm_login.css">
+  <script defer src="adm_login.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <div id="logo-container">
+        <img src="./Images/logo tlp.svg" alt="Company Logo">
+    </div>
+
+    <div id="login-header">
+      <span class="login-text-big">Login</span><br>
+      <span class="login-text-small">professor</span>
+    </div>
+      
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg"> Nome de usuário <span id="error-msg-second-line">e/ou senha inválidos</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Usuário">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Senha">
+      <span id="toggle-password-button" class="toggle-password"></span>      
+      <input type="submit" value="Entrar" id="login-form-submit">
+    </form>
+  
+  </main>
+</body>
+
+</html>
