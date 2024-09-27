@@ -33,7 +33,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (user) {
         // If the credentials are valid, redirect to home.html
-        window.location.href = "./prof.html";
+        window.location.href = "./home_prof.html";
     } else {
         // Otherwise, make the login error message show (change its opacity)
         loginErrorMsg.style.opacity = 1;
