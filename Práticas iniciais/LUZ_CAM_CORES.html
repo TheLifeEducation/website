@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo - Portal TLP-Education</title>
+    <link rel="stylesheet" href="STEAM.css">
+</head>
+<body>
+    <button id="goTopBtn" onclick="goToTop()">
+        <img src="../Images/up_top_arrow_vector_navigation.svg" alt="Scroll to Top">
+    </button>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="../index.html" id="navbar__logo">
+                <img src="../Images/logo tlpE-Branca.png" alt="Logo">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../about.html" class="navbar__links">Sobre</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="../home_aluno.html" class="button">Materiais</a>
+                </li>   
+                <li class="navbar__btn">
+                    <a href="../adm_login.html" class="button">Acesso do Professor</a>
+                </li>               
+            </ul>
+        </div>
+    </nav>
+    <button id="backButton" onclick="window.location.href='../manual.html'">⬅ Voltar</button>
+
+    <div class="manuals" id="Manual">
+        <div class="manuals__container">
+            <div class="manuals__header">
+                <h1>LUZ, CÂMERA, CORES!</h1>
+                <h2>o mundo do sensor de cor</h2>
+            </div>
+            <br>
+            <div class="manuals__buttons">
+                <div class="manual__item">
+                    <a href="../Práticas iniciais/Conteúdos/Luz_cam_cores_conteudo.html" target="_blank"><img src="../Images/LUZ_CAMERA_CORES.png" alt="Luz câmera cores"></a>
+                    <p>Conteúdo didático</p>
+                </div>
+                <div class="manual__item">
+                    <a href="../Montagens/Robo_Indicador_De_Cor.html" target="_blank"><img src="../Images/7.png" alt="Robô Indicador de Cor"></a>
+                    <p>Robô Indicador de Cor</p>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; The Life Education</p>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+</html>
